@@ -1,0 +1,50 @@
+	Linux命令
+1.cd /		回到根目录
+2.ls		显示文件夹
+3.ll		显示文件详细信息
+4.clear		清屏
+5.pwd		查看当前文件夹的路径
+6.mkdir		创建文件夹	例:mkdir aa bb cc
+7.mv		移动文件/修改文件名称	例:mv cc ccc
+8.rm		删除文件
+		rm aa.txt
+		rm -rf 任意文件 强制删除
+9.vim aa.txt	创建编辑文件  aa.txt
+		
+		I	插入
+		Esc	退出编译状态
+		:wq  	保存退出
+		u:  	回复之前的状态
+10.cat aa.txt	查看文件内容
+11.cp aa.txt bb.txt	复制文件
+   cp -r aa cc		递归复制文件夹
+12.tar -xvf 		解压文件
+13.rpm -ivh		安装命令
+
+
+	启动tomcat服务器命令
+
+1.sh startup.sh		./startup.sh		启动tomcat
+2.sh shutdown.sh	./shutdown.sh		关闭tomcat
+
+
+	关闭/启动防火墙命令
+
+1.service iptables stop		关闭防火墙
+2.service iptables start	启动防火墙
+
+
+	启动Mysql服务
+
+1.service mysql start		启动Mysql
+2.service mysql stop		关闭Mysql
+3.service mysql restart		重新启动Mysql
+4.mysqladmin -u root password root	设定用户名和密码
+5.mysql -u root -p		登录Mysql
+6.source xxx.sql;		导入xxx.sql文件
+7.ps -ef |grep mysql		查询服务
+
+
+	Mysql权限命令
+
+GRANT ALL ON *.* TO 'root'@'%' IDENTIFIED BY 'root';
